@@ -394,11 +394,14 @@
 				"Steady Aim|Rogue||3|TCE",
 				"Ability Score Improvement|Rogue||4",
 				"Proficiency Versatility|Rogue||4|UAClassFeatureVariants",
+				"(FA) Martial Adept|Rogue||4",
 				"Uncanny Dodge|Rogue||5",
+				"(FA) Brutal Critical|Rogue||5",
 				"Expertise|Rogue||6",
 				"Evasion|Rogue||7",
 				"Ability Score Improvement|Rogue||8",
 				"Proficiency Versatility|Rogue||8|UAClassFeatureVariants",
+				"(FA) Martial Adept|Rogue||8",
 				{
 					"classFeature": "Roguish Archetype feature|Rogue||9",
 					"gainSubclassFeature": true
@@ -408,6 +411,7 @@
 				"Reliable Talent|Rogue||11",
 				"Ability Score Improvement|Rogue||12",
 				"Proficiency Versatility|Rogue||12|UAClassFeatureVariants",
+				"(FA) Martial Adept|Rogue||12",
 				{
 					"classFeature": "Roguish Archetype feature|Rogue||13",
 					"gainSubclassFeature": true
@@ -416,6 +420,7 @@
 				"Slippery Mind|Rogue||15",
 				"Ability Score Improvement|Rogue||16",
 				"Proficiency Versatility|Rogue||16|UAClassFeatureVariants",
+				"(FA) Martial Adept|Rogue||16",
 				{
 					"classFeature": "Roguish Archetype feature|Rogue||17",
 					"gainSubclassFeature": true
@@ -423,6 +428,7 @@
 				"Elusive|Rogue||18",
 				"Ability Score Improvement|Rogue||19",
 				"Proficiency Versatility|Rogue||19|UAClassFeatureVariants",
+				"(FA) Martial Adept|Rogue||19",
 				"Stroke of Luck|Rogue||20"
 			],
 			"subclassTitle": "Roguish Archetype",
@@ -1391,6 +1397,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"At 4th level, you gain the {@feat Martial Adept} feat, and it is repeatable for you."
+			]
+		},
+		{
 			"name": "Uncanny Dodge",
 			"source": "PHB",
 			"page": 94,
@@ -1401,6 +1420,19 @@
 			"level": 5,
 			"entries": [
 				"Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you."
+			]
+		},
+		{
+			"name": "(FA) Brutal Critical",
+			"source": "PHB",
+			"page": 46,
+			"srd": true,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.",
+				"This stacks with the Barbarian's existing Brutal Critical chain."
 			]
 		},
 		{
@@ -1455,6 +1487,19 @@
 				"{@i 8th-level feature (enhances Ability Score Improvement)}",
 				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
 				"This change represents one of your skills atrophying as you focus on a different skill."
+			]
+		},
+		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"At 8th level, you gain the {@feat Martial Adept} feat again."
 			]
 		},
 		{
@@ -1540,6 +1585,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 12,
+			"entries": [
+				"At 12th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
+		{
 			"name": "Roguish Archetype feature",
 			"source": "PHB",
 			"page": 94,
@@ -1607,6 +1665,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 16,
+			"entries": [
+				"At 16th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
+		{
 			"name": "Roguish Archetype feature",
 			"source": "PHB",
 			"page": 94,
@@ -1658,6 +1729,19 @@
 				"{@i 19th-level feature (enhances Ability Score Improvement)}",
 				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
 				"This change represents one of your skills atrophying as you focus on a different skill."
+			]
+		},
+		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"level": 19,
+			"entries": [
+				"At 19th level, you gain the {@feat Martial Adept} feat again."
 			]
 		},
 		{

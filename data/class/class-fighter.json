@@ -144,7 +144,9 @@
 				"Ability Score Improvement|Fighter||4",
 				"Proficiency Versatility|Fighter||4|UAClassFeatureVariants",
 				"Martial Versatility|Fighter||4|TCE",
+				"(FA) Martial Adept|Fighter||4",
 				"Extra Attack|Fighter||5",
+				"(FA) Brutal Critical|Fighter||5",
 				"Ability Score Improvement|Fighter||6",
 				"Proficiency Versatility|Fighter||6|UAClassFeatureVariants",
 				{
@@ -153,6 +155,7 @@
 				},
 				"Ability Score Improvement|Fighter||8",
 				"Proficiency Versatility|Fighter||8|UAClassFeatureVariants",
+				"(FA) Martial Adept|Fighter||8",
 				"Indomitable|Fighter||9",
 				{
 					"classFeature": "Martial Archetype feature|Fighter||10",
@@ -161,6 +164,7 @@
 				"Extra Attack (2)|Fighter||11",
 				"Ability Score Improvement|Fighter||12",
 				"Proficiency Versatility|Fighter||12|UAClassFeatureVariants",
+				"(FA) Martial Adept|Fighter||12",
 				"Indomitable (two uses)|Fighter||13",
 				"Ability Score Improvement|Fighter||14",
 				"Proficiency Versatility|Fighter||14|UAClassFeatureVariants",
@@ -170,6 +174,7 @@
 				},
 				"Ability Score Improvement|Fighter||16",
 				"Proficiency Versatility|Fighter||16|UAClassFeatureVariants",
+				"(FA) Martial Adept|Fighter||16",
 				"Action Surge (two uses)|Fighter||17",
 				"Indomitable (three uses)|Fighter||17",
 				{
@@ -178,6 +183,7 @@
 				},
 				"Ability Score Improvement|Fighter||19",
 				"Proficiency Versatility|Fighter||19|UAClassFeatureVariants",
+				"(FA) Martial Adept|Fighter||19",
 				"Extra Attack (3)|Fighter||20"
 			],
 			"subclassTitle": "Martial Archetype",
@@ -1503,6 +1509,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"At 4th level, you gain the {@feat Martial Adept} feat, and it is repeatable for you."
+			]
+		},
+		{
 			"name": "Extra Attack",
 			"source": "PHB",
 			"page": 72,
@@ -1514,6 +1533,19 @@
 			"entries": [
 				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
 				"The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class."
+			]
+		},
+		{
+			"name": "(FA) Brutal Critical",
+			"source": "PHB",
+			"page": 46,
+			"srd": true,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.",
+				"This stacks with the Barbarian's existing Brutal Critical chain."
 			]
 		},
 		{
@@ -1586,6 +1618,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"At 8th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
+		{
 			"name": "Indomitable",
 			"source": "PHB",
 			"page": 72,
@@ -1651,6 +1696,19 @@
 				"{@i 12th-level feature (enhances Ability Score Improvement)}",
 				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
 				"This change represents one of your skills atrophying as you focus on a different skill."
+			]
+		},
+		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"level": 12,
+			"entries": [
+				"At 12th level, you gain the {@feat Martial Adept} feat again."
 			]
 		},
 		{
@@ -1736,6 +1794,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"level": 16,
+			"entries": [
+				"At 16th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
+		{
 			"name": "Action Surge (two uses)",
 			"source": "PHB",
 			"page": 72,
@@ -1800,6 +1871,19 @@
 				"{@i 19th-level feature (enhances Ability Score Improvement)}",
 				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
 				"This change represents one of your skills atrophying as you focus on a different skill."
+			]
+		},
+		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"level": 19,
+			"entries": [
+				"At 19th level, you gain the {@feat Martial Adept} feat again."
 			]
 		},
 		{

@@ -259,9 +259,11 @@
 				"Primal Knowledge|Barbarian||3|TCE",
 				"Ability Score Improvement|Barbarian||4",
 				"Proficiency Versatility|Barbarian||4|UAClassFeatureVariants",
+				"(FA) Martial Adept|Barbarian||4",
 				"Extra Attack|Barbarian||5",
 				"Fast Movement|Barbarian||5",
 				"Instinctive Pounce|Barbarian||5|UAClassFeatureVariants",
+				"(FA) Brutal Critical|Barbarian||5",
 				{
 					"classFeature": "Path Feature|Barbarian||6",
 					"gainSubclassFeature": true
@@ -270,6 +272,7 @@
 				"Instinctive Pounce|Barbarian||7|TCE",
 				"Ability Score Improvement|Barbarian||8",
 				"Proficiency Versatility|Barbarian||8|UAClassFeatureVariants",
+				"(FA) Martial Adept|Barbarian||8",
 				"Brutal Critical (1 die)|Barbarian||9",
 				{
 					"classFeature": "Path feature|Barbarian||10",
@@ -278,6 +281,7 @@
 				"Relentless Rage|Barbarian||11",
 				"Ability Score Improvement|Barbarian||12",
 				"Proficiency Versatility|Barbarian||12|UAClassFeatureVariants",
+				"(FA) Martial Adept|Barbarian||12",
 				"Brutal Critical (2 dice)|Barbarian||13",
 				{
 					"classFeature": "Path feature|Barbarian||14",
@@ -286,10 +290,12 @@
 				"Persistent Rage|Barbarian||15",
 				"Ability Score Improvement|Barbarian||16",
 				"Proficiency Versatility|Barbarian||16|UAClassFeatureVariants",
+				"(FA) Martial Adept|Barbarian||16",
 				"Brutal Critical (3 dice)|Barbarian||17",
 				"Indomitable Might|Barbarian||18",
 				"Ability Score Improvement|Barbarian||19",
 				"Proficiency Versatility|Barbarian||19|UAClassFeatureVariants",
+				"(FA) Martial Adept|Barbarian||19",
 				"Primal Champion|Barbarian||20"
 			],
 			"subclassTitle": "Primal Path",
@@ -965,6 +971,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"At 4th level, you gain the {@feat Martial Adept} feat, and it is repeatable for you."
+			]
+		},
+		{
 			"name": "Extra Attack",
 			"source": "PHB",
 			"page": 46,
@@ -999,6 +1018,19 @@
 			"entries": [
 				"{@i 5th-level barbarian feature (replaces Fast Movement)}",
 				"When a creature ends its turn within 15 feet of you, you can use your reaction to move up to half your speed to a space closer to the creature. This movement doesn't provoke opportunity attacks."
+			]
+		},
+		{
+			"name": "(FA) Brutal Critical",
+			"source": "PHB",
+			"page": 46,
+			"srd": true,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.",
+				"This stacks with the Barbarian's existing Brutal Critical chain."
 			]
 		},
 		{
@@ -1067,6 +1099,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"At 8th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
+		{
 			"name": "Brutal Critical (1 die)",
 			"source": "PHB",
 			"page": 46,
@@ -1129,6 +1174,19 @@
 				"{@i 12th-level feature (enhances Ability Score Improvement)}",
 				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
 				"This change represents one of your skills atrophying as you focus on a different skill."
+			]
+		},
+		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"level": 12,
+			"entries": [
+				"At 12th level, you gain the {@feat Martial Adept} feat again."
 			]
 		},
 		{
@@ -1196,6 +1254,19 @@
 			]
 		},
 		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"level": 16,
+			"entries": [
+				"At 16th level, you gain the {@feat Martial Adept} feat again."
+			]
+		},
+		{
 			"name": "Brutal Critical (3 dice)",
 			"source": "PHB",
 			"page": 46,
@@ -1244,6 +1315,19 @@
 				"{@i 19th-level feature (enhances Ability Score Improvement)}",
 				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
 				"This change represents one of your skills atrophying as you focus on a different skill."
+			]
+		},
+		{
+			"name": "(FA) Martial Adept",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"level": 19,
+			"entries": [
+				"At 19th level, you gain the {@feat Martial Adept} feat again."
 			]
 		},
 		{
