@@ -3661,6 +3661,11 @@
 			"name": "Fey Touched",
 			"source": "TCE",
 			"page": 79,
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
 			"ability": [
 				{
 					"choose": {
@@ -7716,6 +7721,11 @@
 			"name": "Shadow Touched",
 			"source": "TCE",
 			"page": 80,
+			"prerequisite": [
+				{
+					"level": 4
+				}
+			],
 			"ability": [
 				{
 					"choose": {
