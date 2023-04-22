@@ -45,6 +45,7 @@
 				6
 			],
 			"spellsKnownProgression": [
+				1,
 				2,
 				3,
 				4,
@@ -56,15 +57,14 @@
 				10,
 				11,
 				12,
-				12,
-				13,
 				13,
 				14,
-				14,
 				15,
-				15,
-				15,
-				15
+				16,
+				17,
+				18,
+				19,
+				20
 			],
 			"optionalfeatureProgression": [
 				{
@@ -73,9 +73,9 @@
 						"MM"
 					],
 					"progression": {
-						"3": 2,
-						"10": 3,
-						"17": 4
+						"3": 4,
+						"10": 5,
+						"17": 6
 					}
 				}
 			],
@@ -158,79 +158,16 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"Sorcery Points"
-					],
-					"rows": [
-						[
-							0
-						],
-						[
-							2
-						],
-						[
-							3
-						],
-						[
-							4
-						],
-						[
-							5
-						],
-						[
-							6
-						],
-						[
-							7
-						],
-						[
-							8
-						],
-						[
-							9
-						],
-						[
-							10
-						],
-						[
-							11
-						],
-						[
-							12
-						],
-						[
-							13
-						],
-						[
-							14
-						],
-						[
-							15
-						],
-						[
-							16
-						],
-						[
-							17
-						],
-						[
-							18
-						],
-						[
-							19
-						],
-						[
-							20
-						]
-					]
-				},
-				{
-					"colLabels": [
 						"{@filter Cantrips Known|spells|level=0|class=sorcerer}",
 						"{@filter Spells Known|spells|class=sorcerer}"
 					],
 					"rows": [
 						[
 							4,
+							1
+						],
+						[
+							4,
 							2
 						],
 						[
@@ -238,7 +175,7 @@
 							3
 						],
 						[
-							4,
+							5,
 							4
 						],
 						[
@@ -262,7 +199,7 @@
 							9
 						],
 						[
-							5,
+							6,
 							10
 						],
 						[
@@ -275,14 +212,6 @@
 						],
 						[
 							6,
-							12
-						],
-						[
-							6,
-							13
-						],
-						[
-							6,
 							13
 						],
 						[
@@ -291,23 +220,27 @@
 						],
 						[
 							6,
-							14
-						],
-						[
-							6,
 							15
 						],
 						[
 							6,
-							15
+							16
 						],
 						[
 							6,
-							15
+							17
 						],
 						[
 							6,
-							15
+							18
+						],
+						[
+							6,
+							19
+						],
+						[
+							6,
+							20
 						]
 					]
 				},
@@ -560,6 +493,7 @@
 				"Metamagic|Sorcerer||3",
 				"Metamagic Options|Sorcerer||3|UAClassFeatureVariants",
 				"Metamagic Options|Sorcerer||3|TCE",
+				"Fast Casting|Sorcerer||3",
 				"Ability Score Improvement|Sorcerer||4",
 				"Proficiency Versatility|Sorcerer||4|UAClassFeatureVariants",
 				"Sorcerous Versatility|Sorcerer||4|TCE",
@@ -2291,7 +2225,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"You have 2 sorcery points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
+				"You have a number of sorcery points equal to your Sorcerer level plus your Charisma modifier, and can never have more than that. You regain all spent sorcery points when you finish a long rest."
 			]
 		},
 		{
@@ -2303,8 +2237,9 @@
 			"classSource": "PHB",
 			"level": 3,
 			"entries": [
-				"At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.",
+				"At 3rd level, you gain the ability to twist your spells to suit your needs. You gain four of the following Metamagic options of your choice.",
 				"You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.",
+				"At 10th level, you gain an additional metamagic option, and may change them at the end of a long rest. At 17th level, you gain an additional metamagic option, and may use up to two metamagics on a single spell. Metamagic options that can be used after applying metamagic to a spell can be used after applying two metamagic options to a spell.",
 				{
 					"type": "options",
 					"count": 2,
@@ -2399,6 +2334,17 @@
 						}
 					]
 				}
+			]
+		},
+		{
+			"name": "Fast Casting",
+			"source": "PHB",
+			"srd": true,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"level": 3,
+			"entries": [
+				"Starting at 3rd level, when you cast a spell as a bonus action, you may still cast spells other than cantrips as an action."
 			]
 		},
 		{
@@ -2933,7 +2879,61 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "(FA) Expanded Spell List|Sorcerer||Draconic||1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Draconic Resilience|Sorcerer||Draconic||1"
+				}
+			]
+		},
+		{
+			"name": "(FA) Expanded Spell List",
+			"source": "PHB",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Draconic",
+			"subclassSource": "PHB",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Draconic Sorcery Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"Cantrip",
+							"{@filter One Elemental Cantrip (Same Type as Ancestory)|spells|damage type=acid;lightning;fire;poison;cold|level=0}"
+						],
+						[
+							"1st",
+							"{@spell Absorb Elements|XGE}, {@spell Thunderwave}"
+						],
+						[
+							"2nd",
+							"{@spell Alter Self}, {@spell Dragon's Breath|XGE}"
+						],
+						[
+							"3rd",
+							"{@spell Fly}, {@spell Protection From Energy}"
+						],
+						[
+							"4th",
+							"{@spell Elemental Bane|XGE}, {@spell Locate Creature}"
+						],
+						[
+							"5th",
+							"{@spell Legend Lore}, {@spell Summon Draconic Spirit|FTD}"
+						]
+					]
 				}
 			]
 		},
@@ -3089,6 +3089,10 @@
 				"Your innate magic comes from the wild forces of chaos that underlie the order of creation. You might have endured exposure to some form of raw magic, perhaps through a planar portal leading to Limbo, the Elemental Planes, or the mysterious Far Realm. Perhaps you were blessed by a powerful fey creature or marked by a demon. Or your magic could be a fluke of your birth, with no apparent cause or reason. However it came to be, this chaotic magic churns within you, waiting for any outlet.",
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "(FA) Expanded Spell List|Sorcerer||Wild||1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Wild Magic Surge|Sorcerer||Wild||1"
 				},
 				{
@@ -3097,6 +3101,56 @@
 				}
 			]
 		},
+		{
+            "name": "(FA) Expanded Spell List",
+            "source": "PHB",
+            "className": "Sorcerer",
+            "classSource": "PHB",
+            "subclassShortName": "Wild",
+            "subclassSource": "PHB",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "table",
+                    "caption": "Wild Magic Expanded Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "col-3 text-center",
+                        "col-9"
+                    ],
+                    "rows": [
+                        [
+                            "Cantrip",
+                            "{@spell Mind Sliver|TCE}"
+                        ],
+                        [
+                            "1st",
+                            "{@spell Chaos Bolt|XGE}, {@spell Color Spray}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell Crown of Madness}, {@spell Pyrotechnics|XGE}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell Enemies Abound|XGE}, {@spell Summon Lesser Demons|XGE}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell Compulsion}, {@spell Confusion}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell Destructive Wave}, {@spell Synaptic Static|XGE}"
+                        ]
+                    ]
+                }
+            ]
+        },
 		{
 			"name": "Tides of Chaos",
 			"source": "PHB",
@@ -3707,6 +3761,10 @@
 						"col-10"
 					],
 					"rows": [
+						[
+							"(FA) Cantrip",
+							"{@spell mending}"
+						],
 						[
 							"1st",
 							"{@spell alarm}, {@spell protection from evil and good}"
@@ -5895,7 +5953,61 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "(FA) Expanded Spell List|Sorcerer||Divine Soul|XGE|1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Favored by the Gods|Sorcerer||Divine Soul|XGE|1"
+				}
+			]
+		},
+		{
+			"name": "(FA) Expanded Spell List",
+			"source": "XGE",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Divine Soul",
+			"subclassSource": "XGE",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Divine Soul Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"Cantrip",
+							"{@spell spare the dying}"
+						],
+						[
+							"1st",
+							"{@spell sanctuary}"
+						],
+						[
+							"2nd",
+							"{@spell gentle repose}, {@spell hold person}"
+						],
+						[
+							"3rd",
+							"{@spell hypnotic pattern}, {@spell revivify}"
+						],
+						[
+							"4th",
+							"{@spell death ward}, {@spell divination}"
+						],
+						[
+							"5th",
+							"{@spell dawn|xge}, {@spell raise dead}"
+						]
+					]
 				}
 			]
 		},
@@ -6060,11 +6172,65 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "(FA) Expanded Spell List|Sorcerer||Shadow|XGE|1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Eyes of the Dark|Sorcerer||Shadow|XGE|1"
 				},
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Strength of the Grave|Sorcerer||Shadow|XGE|1"
+				}
+			]
+		},
+		{
+			"name": "(FA) Expanded Spell List",
+			"source": "XGE",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow",
+			"subclassSource": "XGE",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Draconic Sorcery Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"Cantrip",
+							"{@spell chill touch}"
+						],
+						[
+							"1st",
+							"{@spell bane}, {@spell cause fear|xge}"
+						],
+						[
+							"2nd",
+							"{@spell darkvision}"
+						],
+						[
+							"3rd",
+							"{@spell feign death}, {@spell summon shadowspawn|tce}"
+						],
+						[
+							"4th",
+							"{@spell death ward}, {@spell shadow of moil|xge}"
+						],
+						[
+							"5th",
+							"{@spell antilife shell}, {@spell enervation|xge}"
+						]
+					]
 				}
 			]
 		},
@@ -6173,11 +6339,65 @@
 				"Storm sorcerers are invaluable members of a ship's crew. Their magic allows them to exert control over wind and weather in their immediate area. Their abilities also prove useful in repelling attacks by sahuagin, pirates, and other waterborne threats.",
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "(FA) Expanded Spell List|Sorcerer||Storm|XGE|1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Wind Speaker|Sorcerer||Storm|XGE|1"
 				},
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Tempestuous Magic|Sorcerer||Storm|XGE|1"
+				}
+			]
+		},
+		{
+			"name": "(FA) Expanded Spell List",
+			"source": "XGE",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Storm",
+			"subclassSource": "XGE",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Storm Sorcery Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"Cantrip",
+							"{@spell gust|xge}"
+						],
+						[
+							"1st",
+							"{@spell feather fall}, {@spell fog cloud}"
+						],
+						[
+							"2nd",
+							"{@spell gust of wind}, {@spell warding wind|xge}"
+						],
+						[
+							"3rd",
+							"{@spell call lightning}, {@spell wind wall}"
+						],
+						[
+							"4th",
+							"{@spell storm sphere|xge}, {@spell summon elemental|tce}"
+						],
+						[
+							"5th",
+							"{@spell conjure elemental}, {@spell control winds|xge}"
+						]
+					]
 				}
 			]
 		},
