@@ -2239,7 +2239,7 @@
 			"entries": [
 				"At 3rd level, you gain the ability to twist your spells to suit your needs. You gain four of the following Metamagic options of your choice.",
 				"You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.",
-				"At 10th level, you gain an additional metamagic option, and may change them at the end of a long rest. At 17th level, you gain an additional metamagic option, and may use up to two metamagics on a single spell. Metamagic options that can be used after applying metamagic to a spell can be used after applying two metamagic options to a spell.",
+				"At 10th level, you gain an additional Metamagic option, and each time you finish a long rest, you can change your known Metamagic options. At 17th level, you gain an additional Metamagic option, and can use up to two Metamagic options on a single spell. Metamagic options that can be used after applying a different Metamagic option to a spell can be used after applying two Metamagic options to a spell.",
 				{
 					"type": "options",
 					"count": 2,
@@ -2458,7 +2458,7 @@
 			"classSource": "PHB",
 			"level": 10,
 			"entries": [
-				"At 10th level, you learn an additional metamagic option."
+				"At 10th level, you learn an additional Metamagic option, and each time you finish a long rest, you can change your known Metamagic options."
 			]
 		},
 		{
@@ -2536,7 +2536,7 @@
 			"classSource": "PHB",
 			"level": 17,
 			"entries": [
-				"At 17th level, you learn an additional metamagic option."
+				"At 17th level, you learn an additional Metamagic option, and can use up to two Metamagic options on a single spell. Metamagic options that can be used after applying a different Metamagic option to a spell can be used after applying two Metamagic options to a spell."
 			]
 		},
 		{
